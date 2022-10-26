@@ -29,6 +29,7 @@ class UserController {
                     errors: error.errors.map(e => e.message)
                 })
             }
+            console.error(error);
             res.status(500).json({ status: 'fail', message: 'Internal server error' });
         }
     }
@@ -62,6 +63,7 @@ class UserController {
                 }
             }
         } catch (error) {
+            console.error(error);
             res.status(500).json({
                 status: 'fail',
                 message: 'Internal server error'
@@ -94,6 +96,7 @@ class UserController {
                     errors: error.errors.map(e => e.message)
                 })
             }
+            console.error(error);
             res.status(500).json({ status: 'fail', message: 'Internal server error' });
         }
     }
@@ -107,6 +110,7 @@ class UserController {
             });
             res.status(200).json({ message: "Your account has been successfully deleted" });
         } catch (error) {
+            console.error(error);
             res.status(500).json({ message: error.message });
         }
     }
