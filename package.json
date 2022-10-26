@@ -8,7 +8,8 @@
     "start-dev": "nodemon app",
     "start": "node app",
     "migrate:up": "npx sequelize db:migrate",
-    "migrate:undo": "npx sequelize db:migrate:undo"
+    "migrate:undo": "npx sequelize db:migrate:undo",
+    "start:migrate:up" : "node app && npx sequelize db:migrate"
   },
   "author": "",
   "license": "ISC",
