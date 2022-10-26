@@ -9,7 +9,7 @@
     "start": "node app",
     "migrate:up": "npx sequelize db:migrate",
     "migrate:undo": "npx sequelize db:migrate:undo",
-    "start:migrate:up" : "node app && npx sequelize db:migrate"
+    "start:migrate:up" : "npx sequelize db:migrate && node app"
   },
   "author": "",
   "license": "ISC",
